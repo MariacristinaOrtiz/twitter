@@ -1,7 +1,156 @@
 /*SETEAR NUESTROS ARCHIVOS: SEA IGUAL PARA TODOS LOS NAVEGADORES*/
 * {
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url("../assets/imgs/fondo3.jpg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  padding-top: 100px;
+}
+.inline-block {
+  display: inline-block;
+}
+.container {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+a {
+ text-decoration: none;
+}
+.fa {
+  padding-right: 5px;
+  font-size: 19px;
+}
+header {
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #b4b4b4;
+  background-color: #fff;
+  top: 0;
+  position: fixed;
+}
+header nav ul {
+list-style: none;
+position: relative;
+left: 95px;
+}
+nav ul li {
+
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+nav ul li a {
+color:rgb(120, 120, 120);
+}
+nav ul li a:hover, nav ul li a:focus  {
+  color: rgb(120, 173, 255);
+  border-bottom: 2px solid rgb(120, 173, 255);
+}
+div a i.fa-twitter, .fa-picture-o {
+  font-size: 23px;
+  color: rgb(120, 173, 255);
+}
+header nav div form {
+  border-radius: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  background-color: rgb(244, 244, 255);
+  position: relative;
+  right: 95px;
+  bottom: 3px;
+}
+header nav div form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 8px 45px 10px 10px;
+  letter-spacing: 0.5px;
+}
+header nav div div {
+  position: relative;
+  right: 85px;
+}
+header nav div div .fa-user-circle {
+  font-size: 26px;
+  color: rgb(200, 200, 200);
+  margin-right: 5px;
+
+}
+header nav div div button {
+  border-radius: 15px;
+  background-color:  rgb(120, 173, 255);
+  padding: 9px 15px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+cursor: pointer;
+}
+section {
+  float: left;
+  margin: 20px;
+}
+section.section-perfil {
+  width: 25%;
+  margin-left: 100px;
+  text-align: center;
+}
+section.section-perfil div.div-perfil {
+  background-color: #fff;
+}
+
+.section-perfil div.empty {
+  background-color: rgb(120, 173, 255);
+  height: 130px;
+}
+.section-perfil div.user {
+  padding: 20px 0px;
+  font-size: 16px;
+  background-color: #fff;
+}
+.section-perfil div a {
+  padding: 0px 9px 20px;
+  font-size: 14px;
+  color: #787878;
+}
+.section-perfil div a p {
+  font-size: 20px;
+  color:  rgb(92, 143, 255);
+  font-weight: 600;
+}
+section.section-tweets {
+  width: 55%;
+  margin-left: 30px;
+  text-align: center;
+  background-color: rgb(183, 223, 255);
+  padding: 15px;
+}
+.section-tweets form {
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(183, 190, 255);
+}
+.section-tweets form input {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  padding: 8px 100px 10px 10px;
+  letter-spacing: 0.5px;
+}
+.section-tweets span .fa-user-circle {
+  color: rgb(60, 60, 60);
+  font-size: 30px;
+}
+
+/* clases para los eventos*/
