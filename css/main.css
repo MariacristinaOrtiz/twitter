@@ -138,6 +138,10 @@ section.section-perfil div.div-perfil {
 section.section-tweets {
   width: 40%;
   margin-left: 30px;
+}
+section div.div-tweets {
+  width: 100%;
+  margin-left: 30px;
   text-align: center;
   background-color: rgb(183, 223, 255);
   padding: 15px;
@@ -170,3 +174,41 @@ section.section-tweets {
 }
 
 /* clases para los eventos*/
+.textarea {
+  width: 500px;
+  height: 130px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid rgb(120, 173, 255);
+  outline: none;
+  padding: 10px;
+}
+.button {
+  border-radius: 15px;
+  background:  rgba(120, 173, 255, 0.5);
+  padding: 9px 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: not-allowed;
+  display: block;
+  position: relative;
+  left: 83%;
+}
+#button-active {
+  background:  rgb(120, 158, 255);
+  cursor: pointer;
+}
+.span-photo {
+  float: left;
+  left: 20px;
+}
+.new-tweets {
+  margin: 10px;
+  background-color: rgb(120, 173, 255);
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+}
