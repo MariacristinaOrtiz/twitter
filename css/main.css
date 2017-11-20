@@ -219,7 +219,7 @@ section div.div-tweets {
   background:  rgb(120, 158, 255);
   cursor: pointer;
 }
-/* Estilos a la foto que aparece al costado de textarea*/
+/* Estilos a la foto que aparece al costado de textarea(evento uno)*/
 .span-photo {
   float: left;
   left: 15px;
