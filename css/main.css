@@ -145,6 +145,7 @@ section div.div-tweets {
   text-align: center;
   background-color: rgb(183, 223, 255);
   padding: 15px;
+  border-radius: 4px;
 }
 .section-tweets form {
   padding: 5px;
@@ -177,7 +178,7 @@ section div.div-tweets {
 .textarea {
   width: 500px;
   height: 130px;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 10px;
   border: 2px solid rgb(120, 173, 255);
   outline: none;
@@ -207,8 +208,34 @@ section div.div-tweets {
 }
 .new-tweets {
   margin: 10px;
-  background-color: rgb(120, 173, 255);
-  font-size: 16px;
-  font-weight: 500;
+  margin-left: 30px;
+  width: 100%;
+  font-size: 12px;
+  background-color: #f0f0f0;
   list-style: none;
+  padding-left: 20px;
+  border-radius: 4px;
+}
+#user {
+  color: rgb(40, 40, 40);
+  font-size: 15px;
+  font-weight: 600;
+}
+#user:hover {
+  color: rgb(60, 106, 255);
+  border-bottom: 1px solid rgb(60, 106, 255);
+}
+.li-one {
+  padding: 5px;
+  padding-bottom: 0;
+  margin: 0px 40px;
+  font-size: 15px;
+  background-color: #f0f0f0;
+
+}
+.li-two {
+  margin: 5px 43px;
+  padding-bottom: 7px;
+  color: black;
+  font-weight: 400;
 }

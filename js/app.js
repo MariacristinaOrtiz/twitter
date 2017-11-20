@@ -28,18 +28,19 @@ window.addEventListener('load', function(event) {
     /* function para agregar los tweets*/
     var button = document.querySelector('.button');
     var divFather = document.getElementById('div-father');
-    console.log(button);
     button.addEventListener('click', showTweet);
     function showTweet() {
       if (textarea.value) {
         var container = document.createElement('ul');
         container.classList.add('new-tweets');
         var liBeforeOne = document.createElement('li');
-        liBeforeOne.innerHTML = '<span class="inline-block photo"><img src="assets/imgs/cris.jpg" alt="cris"></span>' + '<a href ="https://twitter.com/crisma17101990">MCOV</a>';
+        liBeforeOne.innerHTML = '<span class="inline-block photo"><img src="assets/imgs/cris.jpg" alt="cris"></span> ' + ' <a id="user" href ="https://twitter.com/crisma17101990">MCOV</a>' + '@crisma17101990';
         var liOne = document.createElement('li');
-        liOne.textContent = textarea.value;
+        liOne.classList.add('li-one');
+        liOne.innerHTML = textarea.value;
         var liTwo = document.createElement('li');
-        liTwo.textContent = Date();
+        liTwo.classList.add('li-two');
+        liTwo.textContent = new Date().getHours() + ':' + new Date().getMinutes() + ' horas';
         container.appendChild(liBeforeOne);
         container.appendChild(liOne);
         container.appendChild(liTwo);
