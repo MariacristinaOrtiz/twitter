@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+/* ESTILOS AL BODY*/
 body {
   background-image: url("../assets/imgs/fondo3.jpg");
   background-repeat: no-repeat;
@@ -12,6 +13,7 @@ body {
   background-size: cover;
   padding-top: 100px;
 }
+/* ETIQUETAS REUTILIZABLES*/
 .inline-block {
   display: inline-block;
 }
@@ -23,12 +25,13 @@ body {
   top: 10px;
 }
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 .fa {
   padding-right: 5px;
   font-size: 19px;
 }
+/* ETILOS AL ENCABEZADO*/
 header {
   width: 100%;
   padding-bottom: 15px;
@@ -37,29 +40,31 @@ header {
   top: 0;
   position: fixed;
 }
+/*Estilos a la lista de menus izquierda*/
 header nav ul {
-list-style: none;
-position: relative;
-left: 95px;
+ list-style: none;
+ position: relative;
+ left: 95px;
 }
 nav ul li {
-
   padding: 5px;
   margin: 0 10px;
   font-size: 15px;
   font-weight: 600;
 }
 nav ul li a {
-color:rgb(120, 120, 120);
+ color:rgb(120, 120, 120);
 }
 nav ul li a:hover, nav ul li a:focus  {
   color: rgb(120, 173, 255);
   border-bottom: 2px solid rgb(120, 173, 255);
 }
+/* Estilos al logo de twitter*/
 div a i.fa-twitter, .fa-picture-o {
   font-size: 23px;
   color: rgb(120, 173, 255);
 }
+/* Estilos al buscador, button twittear, e icono  user*/
 header nav div form {
   border-radius: 20px;
   border: 1px solid rgb(230, 230, 230);
@@ -97,10 +102,12 @@ header nav div div button {
   font-size: 15px;
   cursor: pointer;
 }
+/*ESTILOS A LAS SECCIONES (PERFIL DE USUARIO Y SECCIÓN TWEETS)*/
 section {
   float: left;
   margin: 20px;
 }
+/* Estilos a la sección perfil de usuario(foto de portada y user)*/
 section.section-perfil {
   width: 25%;
   margin-left: 200px;
@@ -109,7 +116,7 @@ section.section-perfil {
 section.section-perfil div.div-perfil {
   background-color: #fff;
 }
-.section-perfil div.empty {
+.section-perfil div.cover-photo { /*foto de portada*/
   background-image: url("../assets/imgs/photo.jpg");
   background-repeat: no-repeat;
   background-position:center;
@@ -120,21 +127,29 @@ section.section-perfil div.div-perfil {
   padding: 25px 0px;
   background-color: #fff;
 }
-.section-perfil div.user a {
-  color: black;
-  font-size: 18px;
+.section-perfil div.user a.user-link {
+  color: rgb(50, 50, 50);
   font-weight: 600;
+  font-size: 20px;
 }
-.section-perfil div a {
+.section-perfil div.user a.user-link:hover {
+  margin-bottom: 1px solid black;
+  color:rgb(92, 143, 255);
+}
+.section-perfil div.div-perfil a { /* Estilo a las etiquetas que contienen seguidores, siguiendo, tweets*/
   padding: 0px 9px 25px;
   font-size: 14px;
   color: #787878;
 }
-.section-perfil div a p {
+.section-perfil div.div-perfil a:hover {
+  color: black;
+}
+.section-perfil div.div-perfil a p {
   font-size: 20px;
   color:  rgb(92, 143, 255);
   font-weight: 600;
 }
+/* Sección de los tweets (form, input e imagen de usuario) sin incluir los eventos js*/
 section.section-tweets {
   width: 40%;
   margin-left: 30px;
@@ -164,7 +179,7 @@ section div.div-tweets {
   width: 93%;
   outline: none;
 }
-.section-tweets span.photo {
+.section-tweets span.photo { /* imagen de usuario */
   width: 7%;
   position: relative;
   top: 12px;
@@ -173,8 +188,8 @@ section div.div-tweets {
   max-width: 100%;
   border-radius: 100%;
 }
-
-/* clases para los eventos*/
+/* CLASES PARA LOS ELEMENTOS CREADOS EN LOS EVENTOS JS*/
+/* Estilos al textarea donde se ingresa el contenido del tweet*/
 .textarea {
   width: 500px;
   height: 130px;
@@ -184,6 +199,7 @@ section div.div-tweets {
   outline: none;
   padding: 10px;
 }
+/* Estilos al button "twittear"(estado inactivo) a quien se le aplica el 2do evento*/
 .button {
   border-radius: 15px;
   background:  rgba(120, 173, 255, 0.5);
@@ -198,14 +214,17 @@ section div.div-tweets {
   position: relative;
   left: 83%;
 }
+/* Estilos al button  "twittear"(estado activo) a quien se le aplica el 2do evento*/
 #button-active {
   background:  rgb(120, 158, 255);
   cursor: pointer;
 }
+/* Estilos a la foto que aparece al costado de textarea*/
 .span-photo {
   float: left;
-  left: 20px;
+  left: 15px;
 }
+/* Estilos al contenedor de los tweets (contenedor que se crea des pues del evento click en el button "twittear"), del user y de la hora en formato de 24hrs*/
 .new-tweets {
   margin: 10px;
   margin-left: 30px;
@@ -216,6 +235,7 @@ section div.div-tweets {
   padding-left: 20px;
   border-radius: 4px;
 }
+/* Estilos a user(link) que se encuentra dentro del container de Tweets*/
 #user {
   color: rgb(40, 40, 40);
   font-size: 15px;
@@ -225,14 +245,15 @@ section div.div-tweets {
   color: rgb(60, 106, 255);
   border-bottom: 1px solid rgb(60, 106, 255);
 }
+/* Estilos a la etiqueta "li" que contiene los tweets en si creados en el textarea*/
 .li-one {
   padding: 5px;
   padding-bottom: 0;
   margin: 0px 40px;
   font-size: 15px;
   background-color: #f0f0f0;
-
 }
+/* Estilos a la etiqueta "li" que contiene la hora en formato 24 horas*/
 .li-two {
   margin: 5px 43px;
   padding-bottom: 7px;

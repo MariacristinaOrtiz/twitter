@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- ENCABEZADO-->
   <header>
     <nav class="menu">
       <div class="container">
@@ -22,7 +23,8 @@
           <li class="inline-block"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Mensaje</a></li>
         </ul>
       </div>
-      <div class="container"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+      <div class="container"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      </div>
       <div class="container">
         <form action="" class="inline-block"><input type="text" placeholder = 'Buscar en Twitter'>
           <span><i class="fa fa-search" aria-hidden="true"></i></span>
@@ -34,11 +36,12 @@
       </div>
     </nav>
   </header>
+  <!--SECCCIÓN DEL PERFIL DE USUARIO (MCOV)-->
   <section class="section-perfil">
-    <div class="empty"></div>
+    <div class="cover-photo"></div>
     <div class="div-perfil">
       <div class="user">
-        <a href="https://twitter.com/crisma17101990">MCOV<br>@crisma17101990 </a>
+        <a class="user-link"href="https://twitter.com/crisma17101990">MCOV<br>@crisma17101990 </a>
       </div>
       <a href="https://twitter.com/crisma17101990" class="inline-block">
         <h3>Tweets</h3>
@@ -54,19 +57,22 @@
       </a>
     </div>
   </section>
+  <!--SECCIÓN DE LOS TWEETS Y ELEMENTOS QUIEREN RECIBEN LOS EVENTOS JS-->
   <section class="section-tweets">
     <div class="div-tweets">
       <span class="inline-block photo"><img src="assets/imgs/cris.jpg" alt="cris"></span>
+      <!-- Formulario que sera reemplazado, con js('primer evento'), por un div que contiene un textarea-->
       <form id="form" class="inline-block">
         <input id="input"type="text" placeholder = '¿Qué esta pasando?'>
         <span><i class="fa fa-picture-o" aria-hidden="true"></i></span>
       </form>
     </div>
+    <!-- Div que va a contener, con js ('') los tweets(almacenado en un elemento ul y elementos li)-->
     <div id="div-father">
 
     </div>
   </section>
-
+  <!-- Vínculo de js con index.HTML-->
   <script type="text/javascript" src="js/app.js"> </script>
 </body>
 </html>
