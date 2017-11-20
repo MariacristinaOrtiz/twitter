@@ -45,9 +45,9 @@ Se muestra una replica del **newsfeed** de la página web **Twitter**. Para reso
 
 * Se creó un archivo **main.css** donde se encuentran todos los estilos aplicados a todas la partes del body del documento HTML, y los estilos a los elementos creados en el archivo javascript.
 
-* Se creo un archivo **javascript** donde se encuentran todos los eventos aplicados ( _focus_ y _click_ ) a la **section-tweetsm** y a los elementos creados en el DOM.
+* Se creo un archivo **javascript** donde se encuentran todos los eventos aplicados ( _focus_ y _click_ ) a la **section-tweets** y a los elementos creados en el DOM.
 
 
 ## Ejemplo usada para el replicado
 
-![twitter Website](docs/fullpage.png)
+![twitter Website](https://github.com/MariacristinaOrtiz/twitter/blob/master/assets/docs/giphy.gif)
