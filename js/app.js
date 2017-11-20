@@ -29,7 +29,7 @@ window.addEventListener('load', function(event) {
     function buttonActive() {
       button.setAttribute('id', 'button-active');
     }
-    /* EVENTO TRES: Al hacer click en el button twittear agrega el contenido de los tweets creados en el textarea en un div(ya existente)>ul>li.liOne), agrega el usuario(liBeforeOne), y la hora en formato 24 hora (liTwo)*/
+    /* EVENTO TRES: Al hacer click en el button twittear agrega el contenido de los tweets creados en el textarea en un div(ya existente)>ul>li.liOne), agrega el usuario(liBeforeOne), y la hora en formato 24 hora (liTwo)(se aplica dentro de la función del evento uno para que podamos tener acceso al button Twittear*/
     var button = document.querySelector('.button');
     var divFather = document.getElementById('div-father');
     button.addEventListener('click', showTweet);
@@ -37,7 +37,7 @@ window.addEventListener('load', function(event) {
     function showTweet() {
       /* Condicionamos para que solo se agregue solo si el textarea tiene valor(contenido, incluye espacios(tab))*/
       if (textarea.value) {
-        /* Creación del elemento "ul" y los 3 li (liBeforeOne, liOne y liTwo) contenidos en el */
+        /* Creación del elemento "ul" y los 3 li (liBeforeOne, liOne y liTwo) contenidos en él */
         var container = document.createElement('ul');
         container.classList.add('new-tweets');
         var liBeforeOne = document.createElement('li');
@@ -53,12 +53,12 @@ window.addEventListener('load', function(event) {
         container.appendChild(liTwo);
         /* Agregación de la etiqueta ul creada al divFather ya existente en el HTML*/
         divFather.appendChild(container);
-        /* Al terminar de agrgar el tweet el textarea quedara vacío para otro nuevo tweet*/
+        /* Al terminar de agrgar el tweet el textarea quedará vacío para otro nuevo tweet*/
         textarea.value = '';
-        /* Al terminar de agregar el tweet el button twittear se desactivara*/
+        /* Al terminar de agregar el tweet el button twittear se desactivará*/
         button.removeAttribute('id', 'button-active');
       } else {
-        /* Si el textarea no tiene contenido el button twittear se desactivara*/
+        /* Si el textarea no tiene contenido el button twittear se desactivará*/
         button.removeAttribute('id', 'button-active');
       }
     }
